@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Samsung calculator</title>
+    <link rel = "icon" href = "https://res.cloudinary.com/dkbwdkthr/image/upload/v1691841521/samsung%20calculator%20trans.png">
+    <script src="https://kit.fontawesome.com/2c47716a54.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="mycalculatorpage2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2c47716a54.js" crossorigin="anonymous"></script>
+    <script src="mycalculatorpage2.js" defer></script>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 calculatorBg">
+                    <div class="ucHeadingContainer">
+                        <p><a href="mycalculator.html"><i class="fa-solid fa-chevron-left arrowLeft"></i></a>Unit converter</p>
+                    </div>
+                    <div class="ucOptionsContainer" >
+                        <button class="upOptions convertselectionName" id="Area">Area</button>
+                        <button class="upOptions" id="Length">Length</button>
+                        <button class="upOptions" id="Temperature">Temperature</button>
+                        <button class="upOptions" id="Volume">Volume</button>
+                        <button class="upOptions" id="Mass">Mass</button>
+                        <button class="upOptions" id="Data">Data</button>
+                        <button class="upOptions" id="Speed">Speed</button>
+                        <button class="upOptions" id="Time">Time</button>
+                        <button class="upOptions" id="Tip">Tip</button>
+                    </div>
+                    
+                    <div class="ucFirstContainer" id="allConvertionsBox1">
+                        <div class="selectionBox">
+                            <select name="firstConvertion" id="firstconvertSelection" class="convertOptions">
+                                <option value="Acres">Acres</option>
+                                <option value="Ares">Ares</option>
+                                <option value="Hectares">Hectares</option>
+                                <option value="Square centimetres">Square centimetres</option>
+                                <option value="Square feet">Square feet</option>
+                                <option value="Square inches">Square inches</option>
+                                <option value="Square metres">Square metres</option>
+                            </select>
+                        </div>
+                        <div class="firstNumberBox">
+                            <div id="firstBoxValueDisplay">
+                                
+                            </div>
+                            <div class="unitBox"><b id="firstUnitDisplay">ac</b></div>
+                        </div>
+                    </div> 
+                    <div class="ucSecondContainer " id="allConvertionsBox2">
+                        <div class="selectionBox">
+                            <select name="secondConvertion" id="secondconvertSelection" class="convertOptions">
+                                <option value="Acres">Acres</option>
+                                <option value="Ares">Ares</option>
+                                <option value="Hectares">Hectares</option>
+                                <option value="Square centimetres">Square centimetres</option>
+                                <option value="Square feet">Square feet</option>
+                                <option value="Square inches">Square inches</option>
+                                <option value="Square metres">Square metres</option>
+                            </select>
+                        </div>
+                        <div class="firstNumberBox">
+                            <div id="secondBoxValueDisplay">
+                                
+                            </div>
+                            <div class="unitBox"><b id="secondUnitDisplay">ac</b></div>
+                        </div>
+                    </div>
+                    
+                        <div class="ucFirstContainer displayNone top" id="tipsContainer1">
+                            <div class="topSubtotalContainer">
+                                <div class="tipsSubHeadingContainer">
+                                    <p class="tipsSubHeading">Subtotal</p>
+                                </div>
+                                <div class="tipsEnteredValueContainer">
+                                    <p class="tipsEnteredValue" id="tipsEnteredValue">0</p>
+                                </div>
+                            </div>
+                            <div class="topSubtotalPercentageContainer">
+                                <div class="tipsSelectionContainer">
+                                    <button class="tipsSelectionButton" id="percentageButton"><span id="percentageValue">0</span>%</button>
+                                </div>
+                                <div class="tipsShowingValueAndNameContainer">
+                                    <div class="tipsValueShowingContainer">
+                                        <p class="tipsValue" id="showTipsAmount">0</p>
+                                    </div>
+                                    <div class="tipsNameContainer">
+                                        <p class="tipsDiscription">Tip amount</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ucSecondContainer displayNone top" id="tipsContainer2">
+                            <div class="topSubtotalContainer">
+                                <div class="tipsSubHeadingContainer">
+                                    <p class="tipsSubHeading">Total</p>
+                                </div>
+                                <div class="tipsEnteredValueContainer">
+                                    <p class="tipsEnteredValue" id="showAddedTotalAmount">0</p>
+                                </div>
+                            </div>
+                            <div class="topSubtotalPercentageContainer">
+                                <div class="tipsSelectionContainer">
+                                    <button class="tipsSelectionButton" id="showAddedPersonInButton"><span id="personValue">1</span></button>
+                                </div>
+                                <div class="tipsShowingValueAndNameContainer">
+                                    <div class="tipsValueShowingContainer">
+                                        <p class="tipsValue" id="eachPersonAmount">0</p>
+                                    </div>
+                                    <div class="tipsNameContainer">
+                                        <p class="tipsDiscription">Each</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="ucButtonContainer">
+                        <table class="ucNumberBox">
+                            <tr>
+                                <th><button class="ucNumberButton" id="7">7</button></th>
+                                <th><button class="ucNumberButton" id="8">8</button></th>
+                                <th><button class="ucNumberButton" id="9">9</button></th>
+                                <th><button class="ucNumberButton" id="deleteNUmber"><i class="fa-solid fa-delete-left greenSign"></i></button></th>
+                            </tr>
+                            <tr>
+                                <th><button class="ucNumberButton" id="4">4</button></th>
+                                <th><button class="ucNumberButton" id="5">5</button></th>
+                                <th><button class="ucNumberButton" id="6">6</button></th>
+                                <th><button class="ucNumberButton redSign" id="C">C</button></th>
+                            </tr>
+                            <tr>
+                                <th><button class="ucNumberButton" id="1">1</button></th>
+                                <th><button class="ucNumberButton" id="2">2</button></th>
+                                <th><button class="ucNumberButton" id="3">3</button></th>
+                                <th><button class="ucNumberButton greenSign" id="topArrow"><i class="fa-solid fa-arrow-up "></i></button></th>
+                            </tr>
+                            <tr>
+                                <th><button class="ucNumberButton disable" id="">+/-</button></th>
+                                <th><button class="ucNumberButton" id="0">0</button></th>
+                                <th><button class="ucNumberButton" id="point">.</button></th>
+                                <th><button class="ucNumberButton greenBlurSign" id="bottomArrow"><i class="fa-solid fa-arrow-down"></i></button></th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="tipsSectionSelectionModalBox modalHide displayNone" id="modalBox">
+                        <div class="selectionTopModelHeading">Tip</div>
+                        <div class="selectionMiddleCountContainer">
+                            <div class="selectionMiddleNumberScrollContainer" id="selectionModalScrollBox">
+                                <script>
+                                    const scrollBox = document.getElementById('selectionModalScrollBox');
+                                    let isScrolling = false;
+                                    let scrollTimeout;
+                        
+                                    for (let i = 0; i < 100; i++) {
+                                        const div = document.createElement('div');
+                                        div.className = 'scrollNumber';
+                                        div.textContent = i;
+                                        div.id = `scrollNo${i}`;
+                                        scrollBox.appendChild(div);
+                                    }
+                        
+                                    const changeColorOfModalScrollBox = () => {
+                                        if (!isScrolling) {
+                                            isScrolling = true;
+                                            scrollBox.style.color = "rgb(16, 197, 16)";
+                                        }
+                        
+                                        clearTimeout(scrollTimeout);
+                                        scrollTimeout = setTimeout(() => {
+                                            isScrolling = false;
+                                            scrollBox.style.color = "white";
+                                             // Reset to default color
+                                        }, 250); // Adjust the timeout duration as needed
+                                    };
+                        
+                                    scrollBox.addEventListener('scroll', changeColorOfModalScrollBox);
+                                </script>
+                                
+                            </div>
+                            <div class="selectionMiddleScrollName">
+                                %
+                            </div>
+                        </div>
+                        <div class="selectionModalBottomButtonContainer">
+                            <div class="selectionModalCancelButtonContainer">
+                                <button class="modalSelectionCancelButton" id="cancelSelection">Cancel</button>
+                            </div>
+                            <div class="selectionModalDoneButtonContainer">
+                                <button class="modalSelectionDoneButton" id="doneSelection">Done</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tipsSectionPersonSelectionModalBox modalHide displayNone" id="personModalBox"> 
+                        <div class="selectionTopModelHeading">Split</div>
+                        <div class="selectionMiddleCountContainer">
+                            <div class="selectionMiddleNumberScrollContainer" id="selectionPersonModalScrollBox">
+                                <script>
+                                    const perseonScrollBox = document.getElementById('selectionPersonModalScrollBox');
+                                    let isScrollingInPerson = false;
+                                    let scrollTimeoutInPerson;
+                        
+                                    for (let i = 1; i < 100; i++) {
+                                        const div = document.createElement('div');
+                                        div.className = 'scrollPersonNumber';
+                                        div.textContent = i;
+                                        div.id = `scrollPersonNo${i}`;
+                                        perseonScrollBox.appendChild(div);
+                                    }
+                        
+                                    const changeColorOfPersonModalScrollBox = () => {
+                                        if (!isScrollingInPerson) {
+                                            isScrollingInPerson = true;
+                                            perseonScrollBox.style.color = "rgb(16, 197, 16)";
+                                        }
+                        
+                                        clearTimeout(scrollTimeout);
+                                        scrollTimeout = setTimeout(() => {
+                                            isScrollingInPerson = false;
+                                            perseonScrollBox.style.color = "white";
+                                             // Reset to default color
+                                        }, 250); // Adjust the timeout duration as needed
+                                    };
+                        
+                                    perseonScrollBox.addEventListener('scroll', changeColorOfPersonModalScrollBox);
+                                </script>
+                                
+                            </div>
+                            <div class="selectionMiddleScrollName personName">
+                                Person
+                            </div>
+                        </div>
+                        <div class="selectionModalBottomButtonContainer">
+                            <div class="selectionModalCancelButtonContainer">
+                                <button class="modalSelectionCancelButton" id="cancelPersonSelection">Cancel</button>
+                            </div>
+                            <div class="selectionModalDoneButtonContainer">
+                                <button class="modalSelectionDoneButton" id="donePersonSelection">Done</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="https://www.dafont.com/donalia.font">Click here</a>
+</body>
+</html>

@@ -1,0 +1,462 @@
+.mainContainer {
+  background-color: white;
+}
+
+.calculatorBg {
+  background-color: black;
+  height: 100vh;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+button {
+  outline: none !important;
+}
+
+button:active {
+  background-color: #6c6b6b;
+  outline: none !important;
+}
+
+.ucHeadingContainer {
+  height: 6%;
+  /* border: 1px solid white; */
+  color: white;
+  font-weight: 700;
+  font-size: 25px;
+  padding-left: 5px;
+}
+
+.ucOptionsContainer {
+  height: 6%;
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  padding-top: 5px;
+  padding-left: 2px;
+  border-bottom: 1px solid rgb(67, 67, 67);
+}
+
+.ucOptionsContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.upOptions {
+  width: auto;
+  height: 30px;
+  border-radius: 25px;
+  background-color: transparent;
+  color: rgb(229, 229, 229);
+  border: 0px;
+  font-weight: 700;
+  margin-right: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.arrowLeft {
+  margin-right: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+/* .upOptions:hover {
+  background-color: #6c6b6b8a;
+} */
+
+.ucFirstContainer {
+  height: 22%;
+  border-bottom: 1px solid rgb(67, 67, 67);
+  /* border: 1px solid white; */
+}
+
+.convertOptions {
+  width: auto;
+  margin: 10px;
+  border-radius: 20px;
+  color: white;
+  background-color: transparent;
+  padding-left: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  border: 0px;
+}
+
+select {
+  outline: none !important;
+}
+
+option {
+  background-color: rgb(73, 73, 73);
+  height: 100%;
+  border: 0px;
+  outline: none !important;
+}
+
+.selectionBox {
+  height: 20%;
+}
+
+.firstNumberBox {
+  text-align: end;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+#firstBoxValueDisplay {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  display: inline-block;
+  font-size: 40px;
+  overflow-x: scroll;
+}
+
+#secondUnitDisplay,
+#firstUnitDisplay {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+/* width */
+::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6c6b6b;
+  border-radius: 25px;
+}
+
+.unitBox {
+  width: 10%;
+  display: inline-block;
+  margin-left: 5px;
+  margin-bottom: 2px;
+}
+
+#secondBoxValueDisplay {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-size: 40px;
+  overflow-x: scroll;
+}
+
+.unit {
+  margin-left: 20px;
+}
+
+.ucSecondContainer {
+  height: 22%;
+  border-bottom: 1px solid rgb(67, 67, 67);
+  margin-bottom: 0px;
+}
+
+.ucButtonContainer {
+  height: 44%;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.ucNumberBox {
+  height: 100%;
+  width: 100%;
+}
+
+th,
+tr {
+  width: 25%;
+  height: 25%;
+  color: white;
+  text-align: center;
+}
+
+th {
+  padding: 5px;
+}
+
+.ucNumberButton {
+  height: 100%;
+  width: 100%;
+  font-size: clamp(2rem, 1vw, 2rem);
+  border-radius: 50%;
+  font-weight: 700;
+  text-align: center;
+  color: azure;
+  background-color: rgb(35, 33, 33);
+  border-width: 0px;
+}
+
+.disable {
+  color: rgb(123, 123, 123);
+}
+
+.convertselectionName{
+  background-color: #6c6b6b8a;
+  border-radius: 25px;
+  width: auto;
+  height: 30px;
+  color: rgb(229, 229, 229);
+  border: 0px;
+  font-weight: 700;
+  margin-right: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.greenBlurSign {
+  color: rgb(47, 103, 47);
+}
+
+#deleteNUmber {
+  font-size: 20px;
+}
+
+.greenSign {
+  color: rgb(16, 197, 16);
+}
+
+.redSign {
+  color: rgb(255, 0, 47);
+}
+
+
+.topSubtotalContainer{
+  height: 40%;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  padding-top: 10px;
+}
+
+.tipsSubHeadingContainer{
+  width: 33%;
+  height: 100%;
+}
+
+.tipsSubHeading{
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.tipsEnteredValueContainer{
+  width: 67%;
+  height: 100%;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.tipsEnteredValue{
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.topSubtotalPercentageContainer{
+  height: 60%;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.tipsSelectionContainer{
+  width: 33%;
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  padding-bottom: 10px;
+}
+
+.tipsSelectionButton{
+  border-radius: 25px;
+  width: 100px;
+  border: 0px;
+  background-color: #6c6b6b68;
+  color: white;
+  font-weight: 700;
+  padding: 4px;
+}
+
+.tipsShowingValueAndNameContainer{
+  width: 67%;
+  height: 100%;
+}
+
+.tipsValueShowingContainer{
+  height: 67%;
+  text-align: right;
+}
+
+.tipsValue{
+  color: white;
+  font-weight: 600;
+  font-size: 35px;
+}
+
+.tipsNameContainer{
+  height: 33%;
+  text-align: right;
+}
+
+.tipsDiscription{
+  color: white;
+  font-weight: 600;
+}
+
+.tipsSectionSelectionModalBox{
+  position: relative;
+  height: 250px;
+  width: 100%;
+  background-color: #2D2D2F;
+  color: white;
+  top: -255px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.tipsSectionPersonSelectionModalBox{
+  position: relative;
+  height: 250px;
+  width: 100%;
+  background-color: #2D2D2F;
+  color: white;
+  top: -505px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.scrollNumber{
+  cursor: pointer;
+}
+
+.selectionTopModelHeading{
+  /* border: 1px solid white; */
+  height: 15%;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.selectionMiddleCountContainer{
+  /* border: 1px solid white; */
+  height: 65%;
+  display: flex;
+}
+
+.selectionMiddleNumberScrollContainer{
+  height: 100%;
+  width: 50%;
+  /* border: 1px solid white; */
+  overflow-y: scroll;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.selectionMiddleScrollName{
+  height: 100%;
+  width: 50%;
+  /* border: 1px solid white; */
+  color: white;
+  font-weight: 700;
+  font-size: 35px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.personName{
+  font-size: 25px;
+}
+
+.scrollPersonNumber{
+  cursor: pointer;
+}
+
+.selectionModalBottomButtonContainer{
+  /* border: 1px solid white; */
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+}
+
+.selectionModalCancelButtonContainer{
+  width: 50%;
+  height: 100%;
+  /* border: 1px solid white; */
+  text-align: center;
+  border-right: 2px solid #6c6b6b;
+}
+
+.modalSelectionCancelButton{
+  background-color: transparent;
+  border: 0px;
+  color: white;
+  font-weight: 600;
+  margin-top: 8px;
+  font-size: 17px;
+  border-radius: 20px;
+  width: 70%;
+}
+
+.selectionModalDoneButtonContainer{
+  width: 50%;
+  height: 100%;
+  /* border: 1px solid white; */
+  text-align: center;
+}
+
+.modalSelectionDoneButton{
+  background-color: transparent;
+  border: 0px;
+  color: white;
+  font-weight: 600;
+  margin-top: 8px;
+  font-size: 17px;
+  border-radius: 20px;
+  width: 70%;
+}
+
+.modalVisible{
+  visibility: visible;
+}
+
+.modalHide{
+  visibility: hidden;
+}
+
+.displayNone{
+  display: none;
+}
+
+.top{
+  margin-top: 0px;
+  height: 22%;
+}
+
+a:focus{
+  color: red;
+}
